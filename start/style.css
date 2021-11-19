@@ -54,76 +54,7 @@
     background: url(img/back.png) center no-repeat #000;
 }
 
-.song {
-    display: none;
-}
 
 body {
     background-color: #FFDAB9;
-}
-
-img {
-    width: 100%;
-}
-
-.balloon-border {
-    position: fixed;
-    top: 100%;
-    opacity: 0.5;
-    z-index: 99999999;
-}
-
-.area {
-    text-align: center;
-    font-size: 70px;
-    color: #C4515C;
-    letter-spacing: -7px;
-    font-weight: 700;
-    text-transform: uppercase;
-    animation: spin 2s ease-out infinite;
-    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
-}
-
-#nae {
-    text-transform: capitalize;
-}
-
-#confetti {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotateZ(0);
-    }
-
-    25% {
-        transform: rotateZ(10deg);
-    }
-
-    50% {
-        transform: rotateZ(0deg);
-    }
-
-    75% {
-        transform: rotateZ(-10deg);
-    }
-}
-
-.type-wrap {
-    font-size: 25px;
-    color: #C4515C;
-
-}
-
-.cake {
-    transform: translateY(-50%);
-    transform: translateX(-50%);
-    left: 50%;
-    position: absolute;
-    padding-top: 250px;
 }
