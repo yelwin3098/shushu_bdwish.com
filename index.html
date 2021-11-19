@@ -5,34 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Happy Birthday!!! :)</title>
+  <title>Happy Birthday!!! 𝓟𝓾𝓣𝓾𝓾 :)</title>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="start/css/bootstrap.min.css">
+  <link rel="stylesheet" href="start/style.css">
 </head>
 
 <body>
   <audio id="myAudio" controls autoplay loop style="display: none;">
     <source src="music.mp3" type="audio/mp3">
   </audio>
-  <div class="container">
+  <div class="container" id="c_one">
+    <div class="row">
+        <div class="loader">
+            <button id="play">Start</button>
+        </div>
+    </div>
+  </div>
+  <div class="container" id="c_two" style="display: none;">
     <div class="one">
-      <h1 class="one">Hey
-        <span id="name">Lydia</span>
+      <h1 class="one">𝒟𝑒𝒶𝓇
+        <span id="name">𝐿💞𝓋𝑒</span>
       </h1>
-      <p class="two" id="greetingText">I really like your name btw!</p>
+      <p class="two" id="greetingText">Thank you for all the good moments that you brought into my life!</p>
     </div>
     <div class="three">
-      <p>It's your birthday!!! :D</p>
+      <p>It's your birthday!!!🎂🎉🎊 :D</p>
     </div>
     <div class="four">
       <div class="text-box">
-        <p class="hbd-chatbox">Happy birthday to you!! Yeee! Many many happy blah...</p>
+        <p class="hbd-chatbox">Happy birthday 💝𝓜𝔂 𝓛𝓸𝓿𝓮💝! May this day be as sunny as your smile, and as beautiful as you are....</p>
         <p class="fake-btn">Send</p>
       </div>
     </div>
     <div class="five">
-      <p class="idea-1">That's what I was going to do.</p>
+      <p class="idea-1">𝒮🏵𝓇𝓇𝓎 for not being by your side on your special day.🙍‍♂️🙇‍♂️</p>
       <p class="idea-2">But then I stopped.</p>
       <p class="idea-3">I realised, I wanted to do something
         <strong>special</strong>.</p>
@@ -49,8 +58,8 @@
       <img src="img/lydia2.png" alt="" class="lydia-dp" id="imagePath">
       <img src="img/hat.svg" alt="" class="hat">
       <div class="wish">
-        <h3 class="wish-hbd">Happy Birthday!</h3>
-        <h5 id="wishText">May the js.prototypes always be with you! ;)</h5>
+        <h3 class="wish-hbd">Happy Birthday Putuu Lay!</h3>
+        <h5 id="wishText">May I always be with you!👫👩‍❤️‍👨 ;)</h5>
       </div>
     </div>
     <div class="seven">
@@ -127,11 +136,22 @@
   </div>
 </body>
 <script>
-  var myaudio = document.getElementById("myAudio");
-  setInterval(function(){
+  // var myaudio = document.getElementById("myAudio");
+  // setInterval(function(){
+  //   myaudio.play(); 
+  // },1000);  // this will make it click again every 1000 miliseconds
+  document.getElementById("play").addEventListener("click", myFunction);
+  function myFunction() {
+    var myaudio = document.getElementById("myAudio");
     myaudio.play(); 
-  },1000);  // this will make it click again every 1000 miliseconds
+    document.getElementById("c_one").style.display = 'none';
+    document.getElementById("c_two").style.display = 'block';
+  }
 </script>
+<script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+<script src="start/js/jquery.js"></script>
+<script src="start/js/typed.min.js"></script>
+<script src="start/js/script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script type="application/javascript" src="script/main.js"></script>
 </html>
