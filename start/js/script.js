@@ -7,8 +7,8 @@ var url = new URL(url_string);
 var c = url.searchParams.get("name");
 console.log(c);
 if (c != null) {
-    document.getElementById("name").innerHTML = c;
-    document.getElementById("nae").innerHTML = c;
+    // document.getElementById("name").innerHTML = c;
+    // document.getElementById("nae").innerHTML = c;
 }
 $(".main").fadeOut(1);
 $('#play').click(function () {
