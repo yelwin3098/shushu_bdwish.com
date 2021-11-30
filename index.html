@@ -56,7 +56,9 @@
     </div>
     <div class="six">
       <img src="img/putuu.jpg" alt="" class="lydia-dp" id="imagePath">
-      <img src="img/hat.svg" alt="" class="hat">
+      <div class="hat">
+        <img src="img/hat.svg" alt="" id="RotateImageBy90Degree">
+      </div>
       <div class="wish">
         <h3 class="wish-hbd">Happy Birthday!!</h3>
         <h5 id="wishText">May I always be with you!👫👩‍❤️‍👨 ;)</h5>
@@ -142,8 +144,8 @@
   // },1000);  // this will make it click again every 1000 miliseconds
   document.getElementById("play").addEventListener("click", myFunction);
   function myFunction() {
-    var myaudio = document.getElementById("myAudio");
-    myaudio.play(); 
+    // var myaudio = document.getElementById("myAudio");
+    // myaudio.play(); 
     document.getElementById("c_one").style.display = 'none';
     document.getElementById("c_two").style.display = 'block';
   }
